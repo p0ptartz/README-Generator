@@ -2,8 +2,8 @@
 const inquirer = require("inquirer")
 const fs = require("fs")
 const generateMarkdown = require("./utils/generateMarkdown.js");
-// const { type } = require("os");
 
+console.log(generateMarkdown)
 // TODO: Create an array of questions for user input
 const questions = [{
     type: "input",
@@ -21,9 +21,10 @@ const questions = [{
     message: "What is the primary use of your project?"
 },
 {
-    type: "input",
+    type: "image",
     name: "Screenshots:",
-    message: "Add your images"
+    message: "Add your images",
+    files: ['.jpg', '.png']
 },
 {
     type: "input",
@@ -39,14 +40,23 @@ const questions = [{
     type: "input",
     name: "Email",
     message: "Please enter your email"
+},
+{
+    type: "input",
+    name: "Linkdein",
+    message: "What is your Linkdein?"
 }
 ];
+
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    inquirer.prompt(questions)
+}
 
 // Function call to initialize app
 init();
