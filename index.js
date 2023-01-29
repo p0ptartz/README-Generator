@@ -7,22 +7,22 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 // TODO: Create an array of questions for user input
 const questions = [{
     type: "input",
-    name: "Title:",
+    name: "Title",
     message: "What is the name of your project?"
 },
 {
     type: "input",
-    name: "Description:",
+    name: "Description",
     message: "How would you DESCRIBE your project?"
 },
 {
     type: "input",
-    name: "Usage:",
+    name: "Usage",
     message: "What is the primary use of your project?"
 },
 {
     type: "image",
-    name: "Screenshots:",
+    name: "Screenshots",
     message: "Add your images",
     files: ['.jpg', '.png']
 },
@@ -53,7 +53,7 @@ const questions = [{
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data), err => {
-
+        console.log('README generated')
     })
 }
 
