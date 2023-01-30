@@ -21,12 +21,6 @@ const questions = [{
     message: "What is the primary use of your project?"
 },
 {
-    type: "image",
-    name: "Screenshots",
-    message: "Add your images",
-    files: ['.jpg', '.png']
-},
-{
     type: "input",
     name: "LiveLink",
     message: "Enter the link to your deployed page"
