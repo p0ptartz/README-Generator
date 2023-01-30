@@ -7,37 +7,43 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
 // TODO: Create an array of questions for user input
 const questions = [{
     type: "input",
-    name: "Title",
+    name: "title",
     message: "What is the name of your project?"
 },
 {
+    type: "list",
+    name: "license",
+    message: "Which license would you like to use?",
+    choices: ["MIT", "Apache", "Boost",]
+},
+{
     type: "input",
-    name: "Description",
+    name: "description",
     message: "How would you DESCRIBE your project?"
 },
 {
     type: "input",
-    name: "Usage",
+    name: "usage",
     message: "What is the primary use of your project?"
 },
 {
     type: "input",
-    name: "LiveLink",
-    message: "Enter the link to your deployed page"
+    name: "liveLink",
+    message: "Enter the link to your deployed page:"
 },
 {
     type: "input",
-    name: "Username",
+    name: "username",
     message: "What is your github username?"
 },
 {
     type: "input",
-    name: "Email",
+    name: "email",
     message: "Please enter your email"
 },
 {
     type: "input",
-    name: "Linkdein",
+    name: "linkdein",
     message: "What is your Linkdein?"
 }
 ];
