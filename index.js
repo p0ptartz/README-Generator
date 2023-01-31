@@ -11,15 +11,21 @@ const questions = [{
     message: "What is the name of your project?"
 },
 {
+    type: "input",
+    name: "description",
+    message: "How would you DESCRIBE your project?"
+},
+{
+    type: "input",
+    name: "installation",
+    message: "How do you install the program?"
+
+},
+{
     type: "list",
     name: "license",
     message: "Which license would you like to use?",
     choices: ["MIT", "Apache", "None"]
-},
-{
-    type: "input",
-    name: "description",
-    message: "How would you DESCRIBE your project?"
 },
 {
     type: "input",
@@ -40,11 +46,6 @@ const questions = [{
     type: "input",
     name: "email",
     message: "Please enter your email"
-},
-{
-    type: "input",
-    name: "linkdein",
-    message: "What is your Linkdein?"
 }
 ];
 
