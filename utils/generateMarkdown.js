@@ -42,20 +42,16 @@ function generateMarkdown(data) {
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
-  * [Live Link](#livelink)
   * [Questions](#questions)
   #
   ## Installation
-  To install, please run the commmand: ${data.installation}
+  ${data.installation}
   #
   ## Usage: 
   ${data.usage}
   #
   ## License:
   ${renderLicenseLink(data.license)}
-  #
-  ## Live Link:
-  [Deployed Page](${data.liveLink})
   #
   ## Questions:
   If you have any questions, feel free to contact me at ${data.email}. You can find more of my work at my [GITHUB](https://github.com/${data.username}). 
