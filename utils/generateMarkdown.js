@@ -58,8 +58,7 @@ function generateMarkdown(data) {
   [Deployed Page](${data.liveLink})
   #
   ## Questions:
-  If you have any questions, feel free to contact me at ${data.email}. You can find more of my work at my [github](https://github.com/${data.username}). 
-  #
+  If you have any questions, feel free to contact me at ${data.email}. You can find more of my work at my [GITHUB](https://github.com/${data.username}). 
   `;
 }
 
