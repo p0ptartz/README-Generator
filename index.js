@@ -34,11 +34,6 @@ const questions = [{
 },
 {
     type: "input",
-    name: "liveLink",
-    message: "Enter the link to your deployed page:"
-},
-{
-    type: "input",
     name: "username",
     message: "What is your github username?"
 },
